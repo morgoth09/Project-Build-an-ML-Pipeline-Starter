@@ -45,8 +45,8 @@ def go(args):
     run.log_artifact(artifact)
 
 
-idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
-df = df[idx].copy()
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx].copy()
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(description="A very basic data cleaning")
